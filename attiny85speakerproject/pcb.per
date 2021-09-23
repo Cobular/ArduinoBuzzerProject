@@ -1,0 +1,115 @@
+[Version]
+Product,2
+File,19
+{
+"Config" : {
+  "NetImportFormat" : ""
+},
+"Board" : {
+  "Width" : 15,
+  "Height" : 15,
+  "Pattern" : "Tripad"
+},
+"CelledOutlines" : [
+  { "Name" : "ATTiny85", "Locked" : true,
+    "Rows" : [
+    [{"Pin" : "1"},{"Pin" : ""},"Free",{"Pin" : "8"}],
+    [{"Pin" : "2"},"Free","Free",{"Pin" : "7"}],
+    [{"Pin" : "3"},"Free","Free",{"Pin" : "6"}],
+    [{"Pin" : "4"},"Free","Free",{"Pin" : "5"}]
+    ]
+  },
+  { "Name" : "Dataflash", "Locked" : true,
+    "Rows" : [
+    [{"Pin" : "6"},"Free"],
+    [{"Pin" : "5"},"Free"],
+    [{"Pin" : "4"},"Free"],
+    [{"Pin" : "3"},"Free"],
+    [{"Pin" : "2"},"Free"],
+    [{"Pin" : "G"},{"Pin" : ""}]
+    ]
+  },
+  { "Name" : "TO92", "Locked" : false,
+    "Rows" : [
+    [{"Pin" : "1"},"Free"],
+    ["Body",{"Pin" : "2"}],
+    [{"Pin" : "3"},"Free"]
+    ]
+  }
+],
+"LeadedOutlines" : [
+  { "Name" : "RESISTOR", "Locked" : false,
+    "BodyLength" : 3, "BodyWidth" : 1,
+    "Pin0Name" : "1", "Pin1Name" : "2", "ShowReference" : true
+  }
+],
+"RadialOutlines" : [
+  { "Name" : "BigCap", "Locked" : true,
+    "LeadSpacing" : 1, "Diameter" : 2,
+    "Pin0Name" : "1", "Pin1Name" : "2"
+  }
+],
+"CustomOutlines" : [
+],
+"SmdOutlines" : [
+],
+"Components" : [
+  { "Designator" : "ATTINY", "Value" : "ATTINY85", "Outline" : "ATTiny85",
+  "X1000" : 10000, "Y1000" : 8000, "EndDeltaX" : 0, "EndDeltaY" : -1,
+  "Text" : { "X" : 0, "Y" : -1, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "C1", "Value" : "220UF", "Outline" : "BigCap",
+  "X1000" : 12000, "Y1000" : 8000, "EndDeltaX" : -1, "EndDeltaY" : -2,
+  "Text" : { "X" : -1, "Y" : 2, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "C2", "Value" : "0.1UF", "Outline" : "BigCap",
+  "X1000" : 6000, "Y1000" : 3000, "EndDeltaX" : -1, "EndDeltaY" : 0,
+  "Text" : { "X" : -1, "Y" : 0, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "DF", "Value" : "DATAFLASH", "Outline" : "Dataflash",
+  "X1000" : 4000, "Y1000" : 3000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 1, "Y" : 6, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  }
+],
+"Links" : [
+  { "X" : 5, "Y" : 4, "EndDeltaX" : 5, "EndDeltaY" : 0, "Group" : 0 },
+  { "X" : 5, "Y" : 6, "EndDeltaX" : 1, "EndDeltaY" : 0, "Group" : 0 },
+  { "X" : 5, "Y" : 5, "EndDeltaX" : 1, "EndDeltaY" : 0, "Group" : 0 },
+  { "X" : 5, "Y" : 7, "EndDeltaX" : 1, "EndDeltaY" : 0, "Group" : 0 },
+  { "X" : 9, "Y" : 4, "EndDeltaX" : 0, "EndDeltaY" : 3, "Group" : 0 },
+  { "X" : 1, "Y" : 3, "EndDeltaX" : 0, "EndDeltaY" : 7, "Group" : 0 },
+  { "X" : 14, "Y" : 4, "EndDeltaX" : 0, "EndDeltaY" : 5, "Group" : 0 }
+],
+"Breaks" : [
+],
+"Wires" : [
+    { "Value" : "GND", "X" : 11, "Y" : 5, "Group" : 0 },
+    { "Value" : "GND", "X" : 5, "Y" : 8, "Group" : 0 },
+    { "Value" : "VCC", "X" : 6, "Y" : 8, "Group" : 0 },
+    { "Value" : "VCC", "X" : 3, "Y" : 3, "Group" : 0 },
+    { "Value" : "GND", "X" : 7, "Y" : 3, "Group" : 0 },
+    { "Value" : "S+", "X" : 13, "Y" : 8, "Group" : 0 },
+    { "Value" : "S-", "X" : 14, "Y" : 5, "Group" : 0 }
+],
+"Text" : [
+    { "Value" : "GND", "X" : 13, "Y" : 1, "Angle" : 0, "Size" : "Small", "Group" : 0 },
+    { "Value" : "VCC", "X" : 1, "Y" : 1, "Angle" : 0, "Size" : "Small", "Group" : 0 }
+],
+"Nets" : [
+],
+"NetColors" : [
+    { "Node" : "" },
+    { "Node" : "" },
+    { "Node" : "" },
+    { "Node" : "" },
+    { "Node" : "" },
+    { "Node" : "" }
+],
+"Notes" : {
+  "Lines" : ""
+}
+}
